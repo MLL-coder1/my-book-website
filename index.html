@@ -22,7 +22,12 @@
         <div class="brand">M.L.L.</div>
         <nav class="main-nav" aria-label="Navigation principale">
           <a href="#accueil">Accueil</a>
-          <a href="#chapitres">Chapitres</a>
+          <div class="chapter-menu">
+            <button type="button" class="chapter-menu-button">Chapitres</button>
+            <div class="chapter-dropdown" aria-label="Liste des chapitres">
+              <a href="#chapitre-1">01 — Le jour où tous dérape</a>
+            </div>
+          </div>
           <a href="#a-propos">À propos</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -32,12 +37,17 @@
         <section class="hero" id="accueil">
           <div class="hero-overlay"></div>
           <div class="hero-content">
-            <p class="kicker">Le temps n'est plus une ligne droite.</p>
+            <p class="kicker">Quand le temps se fracture, l’Histoire sombre.</p>
             <h1>
               <span class="project">PROJECT</span>
               <span class="title-red">H.LEE</span>
             </h1>
             <p class="genre">Science-fiction</p>
+
+            <div class="hero-subtext">
+              Harrisson Lee a compris la vérité la plus dangereuse du monde : le temps
+              ne fuit pas, il se réécrit.
+            </div>
 
             <div class="book-meta">
               <div class="meta-card left">
@@ -59,39 +69,14 @@
 
         <section class="intro section" id="chapitres">
           <div class="section-heading">
-            <p class="eyebrow">Dernière publication</p>
+            <p class="eyebrow">Table des matières</p>
             <h2>Les chapitres du livre</h2>
           </div>
 
           <div class="chapter-list">
-            <article class="chapter-card featured">
+            <article class="chapter-card featured" id="chapitre-1">
               <span class="chapter-number">Chapitre 01</span>
-              <h3>Le premier saut</h3>
-              <p>
-                Alors que le monde s’effondre autour de lui, H.Lee comprend que le
-                temps n’est pas une ligne, mais un labyrinthe.
-              </p>
-              <a href="#">Lire le chapitre</a>
-            </article>
-
-            <article class="chapter-card">
-              <span class="chapter-number">Chapitre 02</span>
-              <h3>Le cœur de la machine</h3>
-              <p>
-                Derrière l’illusion du présent, un système ancien veille dans les
-                profondeurs du ciel.
-              </p>
-              <a href="#">Lire le chapitre</a>
-            </article>
-
-            <article class="chapter-card">
-              <span class="chapter-number">Chapitre 03</span>
-              <h3>La mémoire du futur</h3>
-              <p>
-                Les souvenirs ne sont plus des traces du passé, mais des portes vers
-                des mondes encore inconnus.
-              </p>
-              <a href="#">Lire le chapitre</a>
+              <h3>Le jour où tous dérape</h3>
             </article>
           </div>
         </section>
@@ -103,7 +88,7 @@
           </div>
           <div class="about-content">
             <p>
-              Après des années de recherches, le scientifique Harrisson Lee parvient à mettre au point une incréable machine spatio-temporelle, capable de traverser les époques.
+              Après des années de recherches, le scientifique Harrisson Lee parvient à mettre au point une incroyable machine spatio-temporelle, capable de traverser les époques.
             </p>
 
             <p>
