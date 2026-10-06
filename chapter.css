@@ -1,0 +1,131 @@
+body {
+  background:
+    radial-gradient(circle at top, rgba(63, 100, 180, 0.12), transparent 18%),
+    linear-gradient(180deg, #040b15 0%, #07111d 100%);
+}
+
+.chapter-page {
+  width: min(920px, calc(100% - 2rem));
+  margin: 8rem auto 3rem;
+  padding: 2.5rem 2rem 3rem;
+  background: rgba(8, 15, 26, 0.82);
+  border: 1px solid rgba(127, 228, 255, 0.18);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+  border-radius: 1.25rem;
+  backdrop-filter: blur(10px);
+}
+
+.chapter-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.chapter-header h1,
+.chapter-header h2 {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+}
+
+.chapter-header h1 {
+  color: var(--cyan);
+  letter-spacing: 0.2rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.chapter-header h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  color: #f5f9ff;
+}
+
+.chapter-content {
+  font-family: "Roboto", sans-serif;
+  color: #eaf4ff;
+  line-height: 1.9;
+  font-size: 1.08rem;
+}
+
+.chapter-content p {
+  margin: 1.1rem 0;
+  text-align: justify;
+}
+
+.chapter-content p:first-of-type::first-letter {
+  float: left;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3.2rem;
+  line-height: 0.9;
+  padding-right: 0.5rem;
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.dialogue {
+  margin: 2rem 0;
+  padding: 1.3rem 1.4rem;
+  background: rgba(10, 21, 35, 0.9);
+  border-left: 3px solid rgba(127, 228, 255, 0.8);
+  border-radius: 0.8rem;
+}
+
+.dialogue p {
+  margin: 0.8rem 0;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.speaker {
+  font-family: "Orbitron", sans-serif;
+  color: var(--cyan);
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  margin-right: 0.4rem;
+}
+
+.chapter-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border: 1px solid rgba(127, 228, 255, 0.4);
+  border-radius: 999px;
+  color: var(--cyan-bright);
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.back-link:hover {
+  background: rgba(127, 228, 255, 0.08);
+  box-shadow: 0 0 18px rgba(127, 228, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .chapter-page {
+    margin-top: 9rem;
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .chapter-content {
+    font-size: 1rem;
+  }
+
+  .chapter-content p {
+    text-align: left;
+  }
+}
