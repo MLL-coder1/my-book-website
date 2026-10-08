@@ -59,31 +59,61 @@
             </p>
 
             <p>
-              Le jour de la présentation, toute l’équipe était sur le qui-vive pour terminer les derniers testes pendant que Bily et Harrisson débattaient sur qui rentrera dans la machine en premier :
+              Le jour de la présentation, toute l’équipe était sur le qui-vive pour terminer les derniers testes pendant que Bily et Harrisson débattaient sur qui rentrera dans la machine en premier.
             </p>
 
             <div class="dialogue">
               <p><span class="speaker">- Harrisson</span> : Tu dois y aller en premier ! s’exclama Bily.</p>
               <p><span class="speaker">- Pour quelle raison ?</span> Après tout, pourquoi ça ne serait pas toi ?</p>
               <p><span class="speaker">- Parce que c’est toi</span> qui a organisé ce projet ! lui répondit-il.</p>
-              <p><span class="speaker">- Oui, peut être</span>, mais sans toi il n’aurait pas vu le jour, c’est toi qui entre autres à trouver la vitesse à laquelle doit tourner la machine. Tu as fait la plus grande partie du travail. Expliqua Harrisson.</p>
-              <p><span class="speaker">- Merci</span>, mais c’est grâce à toi que je suis entré dans ce projet alors tu as le devoir d'inaugurer la machine ! rétorqua Bily.</p>
+              <p><span class="speaker">- Oui, peut être</span>, mais sans toi il n’aurait pas vu le jour, c’est toi qui entre autres à trouver la vitesse à laquelle doit tourner la machine.</p>
+              <p><span class="speaker">- Merci</span>, mais c’est grâce à toi que je suis entré dans ce projet alors tu as le devoir d’inaugurer la machine ! rétorqua Bily.</p>
               <p><span class="speaker">- Mais...</span></p>
-              <p><span class="speaker">- ... Non !</span> Tu n'as pas le choix, toute l’équipe est d’accord.</p>
+              <p><span class="speaker">- ... Non !</span> Tu n’as pas le choix, toute l’équipe est d’accord.</p>
             </div>
 
             <p>
-              Suite à cette discussion, Harrisson se prépara pour réaliser le tout premier voyage dans le temps. Il réfléchit également au lieu et à la date où il irait. Et il rédigea le règlement du voyage spatio-temporel : il décida qu’il y aurait trois règles majeures : la première était : qu’il ne faudrait jamais changer un élément historique important, quelle que soit sa nature : élections, décision politique, ou même une guerre. La seconde : ne laisser aucune trace de son passage. Et enfin la dernière : ne pas croiser ni interagir avec son double du passé ou du futur.
+              Suite à cette discussion, Harrisson se prépara pour réaliser le tout premier voyage dans le temps. Il réfléchit également au lieu et à la date où il irait. Et il rédigea le règlement du voyage spatio-temporel : il décida qu’il y aurait trois règles majeures : la première était de ne jamais changer un événement historique important, la seconde de ne laisser aucune trace de son passage et la dernière de ne pas croiser ni interagir avec son double du passé ou du futur.
             </p>
 
             <p>
-              A l’heure de la présentation approchant à grand pas, Bily demanda à Harrisson son lieu et sa date d'arrivée. Harrisson lui répondit simplement qu’il souhaitait aller à Marseille au début des années 80.
+              A l’heure de la présentation approchant à grand pas, Bily demanda à Harrisson son lieu et sa date d’arrivée. Harrisson lui répondit simplement qu’il souhaitait aller à Marseille au début des années 80.
             </p>
           </div>
 
           <div class="chapter-footer">
             <a href="index.html#chapitres" class="back-link">← Retour à la table des matières</a>
           </div>
+
+          <div class="comments-toggle-wrap">
+            <button type="button" class="toggle-comments-btn" id="toggle-comments-btn" aria-expanded="false">
+              Voir les commentaires
+            </button>
+          </div>
+
+          <section class="comments-section" id="comments-section" hidden>
+            <div class="comments-header">
+              <h3>Commentaires</h3>
+            </div>
+
+            <div class="comments-list" id="comments-list">
+              <article class="comment-item">
+                <div class="comment-header">
+                  <span class="comment-author">Léa</span>
+                  <span class="comment-rating">★★★★★</span>
+                </div>
+                <p class="comment-text">Le chapitre pose une ambiance très solide. J’ai vraiment envie d’en savoir plus sur la machine à voyager dans le temps.</p>
+              </article>
+
+              <article class="comment-item">
+                <div class="comment-header">
+                  <span class="comment-author">Noah</span>
+                  <span class="comment-rating">★★★★☆</span>
+                </div>
+                <p class="comment-text">Très bon départ, surtout dans le débat entre Harrisson et Billy. L’introduction est claire et immersive.</p>
+              </article>
+            </div>
+          </section>
         </article>
       </main>
 
@@ -91,5 +121,17 @@
         <p>© 2026 M.L.L. — Project H.Lee</p>
       </footer>
     </div>
+
+    <script>
+      const toggleCommentsBtn = document.getElementById('toggle-comments-btn');
+      const commentsSection = document.getElementById('comments-section');
+
+      toggleCommentsBtn.addEventListener('click', () => {
+        const isHidden = commentsSection.hasAttribute('hidden');
+        commentsSection.toggleAttribute('hidden');
+        toggleCommentsBtn.setAttribute('aria-expanded', String(isHidden));
+        toggleCommentsBtn.textContent = isHidden ? 'Masquer les commentaires' : 'Voir les commentaires';
+      });
+    </script>
   </body>
 </html>
