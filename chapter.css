@@ -50,7 +50,7 @@ body {
 }
 
 .chapter-content p {
-  margin: 1.1rem 0;
+  margin: 1.3rem 0;
   text-align: justify;
 }
 
@@ -65,17 +65,21 @@ body {
 }
 
 .dialogue {
-  margin: 2rem 0;
-  padding: 1.3rem 1.4rem;
+  margin: 2.2rem 0;
+  padding: 1.6rem 1.6rem 1.3rem;
   background: rgba(10, 21, 35, 0.9);
   border-left: 3px solid rgba(127, 228, 255, 0.8);
   border-radius: 0.8rem;
 }
 
 .dialogue p {
-  margin: 0.8rem 0;
+  margin: 1rem 0;
   line-height: 1.8;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: baseline;
 }
 
 .speaker {
@@ -84,7 +88,8 @@ body {
   letter-spacing: 0.08rem;
   text-transform: uppercase;
   font-size: 0.72rem;
-  margin-right: 0.4rem;
+  margin-right: 0.2rem;
+  white-space: nowrap;
 }
 
 .chapter-footer {
@@ -127,5 +132,10 @@ body {
 
   .chapter-content p {
     text-align: left;
+  }
+
+  .dialogue {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
